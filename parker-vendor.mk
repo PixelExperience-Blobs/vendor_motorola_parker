@@ -6,6 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/parker
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/parker/proprietary/vendor/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.motosignature.xml \
+    vendor/motorola/parker/proprietary/vendor/framework/com.motorola.motosignature.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.motorola.motosignature.jar \
     vendor/motorola/parker/proprietary/vendor/bin/capsense_reset:$(TARGET_COPY_OUT_VENDOR)/bin/capsense_reset \
     vendor/motorola/parker/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice \
     vendor/motorola/parker/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
